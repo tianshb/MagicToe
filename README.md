@@ -24,7 +24,7 @@ MagicToe是一个基于Java爬虫框架[WebMagic](https://github.com/code4craft/
 2. 启动爬虫
 hupuspider通过URL请求的方式运行，在浏览器中键入 **localhost:8080/**（默认端口为8080，如果遇到端口冲突，可以在配置文件 [`hupu-spider/src/main/resources/application.yml`](https://github.com/CrowHawk/MagicToe/blob/master/hupu-spider/src/main/resources/application.yml) 中修改端口），爬虫即可开始运行了。
 3. 运行数据可视化模块
-将数据爬取到数据库中后，直接在Tomcat中运行[data-analysis](https://github.com/CrowHawk/MagicToe/tree/master/data-analysis)模块即可，通过在浏览器中输入不同的URL可以得到不同的图表，具体请查看 `data-analysis/src/main/java/com/crow/web/EchartsController.java` 。
+将数据爬取到数据库中后，直接在Tomcat中运行[data-analysis](https://github.com/CrowHawk/MagicToe/tree/master/data-analysis)模块即可，通过在浏览器中输入不同的URL可以得到不同的图表，具体请查看 [`data-analysis/src/main/java/com/crow/web/EchartsController.java`](https://github.com/CrowHawk/MagicToe/blob/master/data-analysis/src/main/java/com/crow/web/EchartsController.java) 。
 
 ## 效果展示
 以虎扑用户的地域分布为例：
