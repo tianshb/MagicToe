@@ -20,9 +20,9 @@ MagicToe是一个基于Java爬虫框架[WebMagic](https://github.com/code4craft/
 **运行爬虫：**
 以爬取虎扑步行街的帖子、用户和评论为例。
 1. 初始化数据库
-在本地MySQL中创建自己的schema，执行初始化数据库的脚本 `hupu-spider/src/main/resources/db.sql` ，并根据自己的数据库信息修改配置文件 `hupu-spider/src/main/resources/application.yml` 中的数据源信息。
+在本地MySQL中创建自己的schema，执行初始化数据库的脚本 [`hupu-spider/src/main/resources/db.sql`](https://github.com/CrowHawk/MagicToe/blob/master/hupu-spider/src/main/resources/db.sql) ，并根据自己的数据库信息修改配置文件 [`hupu-spider/src/main/resources/application.yml`](https://github.com/CrowHawk/MagicToe/blob/master/hupu-spider/src/main/resources/application.yml) 中的数据源信息。
 2. 启动爬虫
-hupuspider通过URL请求的方式运行，在浏览器中键入 **localhost:8080/**（默认端口为8080，如果遇到端口冲突，可以在配置文件 `hupu-spider/src/main/resources/application.yml` 中修改端口），爬虫即可开始运行了。
+hupuspider通过URL请求的方式运行，在浏览器中键入 **localhost:8080/**（默认端口为8080，如果遇到端口冲突，可以在配置文件 [`hupu-spider/src/main/resources/application.yml`](https://github.com/CrowHawk/MagicToe/blob/master/hupu-spider/src/main/resources/application.yml) 中修改端口），爬虫即可开始运行了。
 3. 运行数据可视化模块
 将数据爬取到数据库中后，直接在Tomcat中运行[data-analysis](https://github.com/CrowHawk/MagicToe/tree/master/data-analysis)模块即可，通过在浏览器中输入不同的URL可以得到不同的图表，具体请查看 `data-analysis/src/main/java/com/crow/web/EchartsController.java` 。
 
