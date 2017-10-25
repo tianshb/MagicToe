@@ -4,7 +4,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="dataanalysis" />
+          <element id="module-output" name="data-analysis" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
@@ -47,9 +47,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/dataanalysis/target/data-analysis/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/data-analysis/target/data-analysis/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="dataanalysis/web/Web" />
+      <element id="javaee-facet-resources" facet="data-analysis/web/Web" />
     </root>
   </artifact>
 </component>

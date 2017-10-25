@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/dataanalysis" />
+    <file type="web" url="file://$PROJECT_DIR$/data-analysis" />
     <file type="web" url="file://$PROJECT_DIR$/datavisual" />
   </component>
   <component name="MavenProjectsManager">
@@ -11,6 +11,9 @@
         <option value="$PROJECT_DIR$/hupuspider/pom.xml" />
         <option value="$PROJECT_DIR$/dataanalysis/pom.xml" />
         <option value="$PROJECT_DIR$/IPSpider/pom.xml" />
+        <option value="$PROJECT_DIR$/data-analysis/pom.xml" />
+        <option value="$PROJECT_DIR$/hupu-spider/pom.xml" />
+        <option value="$PROJECT_DIR$/ip-spider/pom.xml" />
       </list>
     </option>
   </component>
