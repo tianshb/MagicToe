@@ -29,7 +29,7 @@ public class HupuSpiderPipeline implements Pipeline{
     public void process(ResultItems resultItems, Task task) {
 
         for(Map.Entry<String, Object> entry : resultItems.getAll().entrySet()) {
-            
+
             if(entry.getKey().equals("postInfo")) {
                 Post post = (Post) entry.getValue();
                 if(post != null) {
