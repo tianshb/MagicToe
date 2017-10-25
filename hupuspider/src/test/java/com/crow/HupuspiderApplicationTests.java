@@ -11,6 +11,10 @@ public class HupuspiderApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		String word = "欢迎/v";
+		if(word.matches("[\\u4e00-\\u9fa5]+/(n|v|a)")) {
+			System.out.println(word.substring(0,word.length() - 2));
+		}
 	}
 
 }

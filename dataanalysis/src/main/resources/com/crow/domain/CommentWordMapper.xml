@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.crow.domain.CommentWordMapper">
+    <sql id="table">comment_word</sql>
+    <resultMap id="comment_word" type="CommentWord">
+        <id property="id" column="id"/>
+        <result property="word" column="word"/>
+    </resultMap>
+    <resultMap id="word_counts" extends="comment_word" type="CommentWord">
+        <result property="wordCount" column="word_count"/>
+    </resultMap>
+    <select id="selectWordsSorted" resultMap="word_counts">
+        SELECT
+        word,
+        COUNT(*) AS word_count
+        FROM
+        <include refid="table"/>
+        WHERE char_length(word) > 1
+        GROUP BY word
+        ORDER BY word_count DESC
+        LIMIT #{selectLimitNum};
+    </select>
+</mapper>

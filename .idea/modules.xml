@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/IPSpider/IPSpider.iml" filepath="$PROJECT_DIR$/IPSpider/IPSpider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dataanalysis/dataanalysis.iml" filepath="$PROJECT_DIR$/dataanalysis/dataanalysis.iml" />
       <module fileurl="file://$PROJECT_DIR$/hupuspider/hupuspider.iml" filepath="$PROJECT_DIR$/hupuspider/hupuspider.iml" />
-      <module fileurl="file://$PROJECT_DIR$/IPSpider/ipspider.iml" filepath="$PROJECT_DIR$/IPSpider/ipspider.iml" />
     </modules>
   </component>
 </project>

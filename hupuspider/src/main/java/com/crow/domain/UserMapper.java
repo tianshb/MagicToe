@@ -8,6 +8,6 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface UserMapper {
-    @Insert("insert ignore into user (`name`,`gender`,`home_team`,`address`) values (#{name},#{gender},#{homeTeam},#{address})")
+    @Insert("replace into user (`name`,`gender`,`home_team`,`address`,`views`) values (#{name},#{gender},#{homeTeam},#{address},#{views})")
     void insert(User user);
 }

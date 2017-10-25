@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/dataanalysis" />
+    <file type="web" url="file://$PROJECT_DIR$/datavisual" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/magictoe/pom.xml" />
         <option value="$PROJECT_DIR$/hupuspider/pom.xml" />
+        <option value="$PROJECT_DIR$/dataanalysis/pom.xml" />
         <option value="$PROJECT_DIR$/IPSpider/pom.xml" />
       </list>
     </option>

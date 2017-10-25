@@ -34,12 +34,13 @@ public class StartUpController {
         }
         */
         HttpClientDownloader httpClientDownloader = new HttpClientDownloader();
+        //设置动态转发代理，使用定制的ProxyProvider
         httpClientDownloader.setProxyProvider(CrowProxyProvider.from(new Proxy("forward.xdaili.cn", 80)));
 
         Spider.create(new HupuBxjPageProcessor())
                 //new PostInfoPageProcessor())
-                .setDownloader(httpClientDownloader)
-                .addUrl("https://bbs.hupu.com/bxj-1")
+                //.setDownloader(httpClientDownloader)
+                .addUrl("https://bbs.hupu.com/vote-1")
                 //.addUrl("http://blog.sina.com.cn/s/articlelist_1487828712_0_1.html")
                 .addPipeline(hupuSpiderPipeline)
                 .thread(4)

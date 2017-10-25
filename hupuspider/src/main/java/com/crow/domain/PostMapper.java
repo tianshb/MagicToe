@@ -8,6 +8,6 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface PostMapper {
-    @Insert("insert into post (`title`,`author`,`reply_num`) values (#{title},#{author},#{replyNum})")
+    @Insert("insert ignore into post (`title`,`author`,`reply_num`) values (#{title},#{author},#{replyNum})")
     void insert(Post post);
 }

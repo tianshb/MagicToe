@@ -8,21 +8,31 @@ import java.util.List;
  */
 public class URLGeneratedUtil {
 
-    public final static String prefix = "https://bbs.hupu.com";
+    public final static String PREFIX = "https://bbs.hupu.com";
 
-    public final static int startPos = 2;//爬取的起始目录页位置
+    public final static int START_POS = 2;//爬取的起始目录页位置
 
-    public final static int endPos = 20;//爬取的目录页页数
+    public final static int END_POS = 10;//爬取的目录页页数
 
+    /*
     public static List<String> generateListURL() {
         List<String> urls = new ArrayList<>();
-        for(int i = startPos; i <= endPos; i++) {
-            urls.add(prefix + "/bxj-" + i);
+        for(int i = START_POS; i <= END_POS; i++) {
+            urls.add(PREFIX + "/bxj-" + i);
+        }
+        return urls;
+    }
+    */
+
+    public static List<String> generatePostURLs(String postURL) {
+        List<String> urls = new ArrayList<>();
+        for(int i = START_POS; i <= END_POS; i++) {
+            urls.add(postURL.substring(0, postURL.length() - 5) + "-" + i + ".html");
         }
         return urls;
     }
 
     public static String generatePostURL(String url) {
-        return prefix + url;
+        return PREFIX + url;
     }
 }

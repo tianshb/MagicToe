@@ -10,6 +10,15 @@ public class User {
     private String gender;
     private String homeTeam;//用户主队
     private String address;//用户所在地
+    private int views;//访问量
+
+    public int getViews() {
+        return views;
+    }
+
+    public void setViews(int views) {
+        this.views = views;
+    }
 
     public int getId() {
         return id;
