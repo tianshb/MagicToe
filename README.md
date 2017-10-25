@@ -29,7 +29,7 @@ hupuspider通过URL请求的方式运行，在浏览器中键入 **localhost:808
 ## 效果展示
 以虎扑用户的地域分布为例：
 <center><img src="http://pic.yupoo.com/crowhawk/a5b549cf/ae262b02.png"></center>
-更多详细的分析请参考我的博客[《数据不说谎：用网络爬虫探秘虎扑步行街》]()
+更多详细的分析请参考我的博客[《数据不说谎：用网络爬虫探秘虎扑步行街》](https://crowhawk.github.io/2017/10/25/hupuspider/)
 
 ## TODO
 * [ ] 使用Redis分布式队列实现分布式爬取。
