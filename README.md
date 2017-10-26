@@ -35,7 +35,7 @@ hupuspider通过URL请求的方式运行，在浏览器中键入 **localhost:808
 
 ## TODO
 * [ ] 使用Redis分布式队列实现分布式爬取。
-* [ ] 使用Quarts实现定时更新数据。
+* [ ] 使用Quartz实现定时更新数据。
 
 ## 联系作者
 + Personal Website：[Crow Home](https://crowhawk.github.io/)
