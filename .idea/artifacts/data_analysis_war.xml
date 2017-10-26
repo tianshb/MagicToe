@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="data-analysis:war">
-    <output-path>$PROJECT_DIR$/data-analysis/target</output-path>
-    <root id="archive" name="data-analysis.war">
-      <element id="artifact" artifact-name="data-analysis:war exploded" />
-    </root>
-  </artifact>
-</component>
